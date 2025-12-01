@@ -30,10 +30,11 @@ class Test(Base):
         vaoRef = glGenVertexArrays(1)
         glBindVertexArray(vaoRef)
 
-        positionData = [ 
-            [ 0.8, 0.0, 0.0], [ 0.4, 0.6, 0.0],
-            [-0.4, 0.6, 0.0], [-0.8, 0.0,0.0],
-            [-0.4, -0.6, 0.0], [0.4,-0.6, 0.0] 
+        positionData = [
+            [ 0.0,  0.8, 0.0],   # puncak atas
+            [ 0.5,  0.0, 0.0],   # sisi kanan
+            [ 0.0, -0.6, 0.0],   # puncak bawah (sedikit lebih pendek)
+            [-0.5,  0.0, 0.0],   # sisi kiri
         ]
 
 
